@@ -7,7 +7,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content.match('https?:\/\/discord.gg\/[A-z][A-z][A-z][A-z][A-z][A-z]')) {
+  if (msg.content.match('https?:\/\/discord.gg\/[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]?[A-z0-9]?[A-z0-9]')) {
     msg.delete({ timeout: 1000 })
     .then(m => msg.channel.send('Developer\'s 에서 디스코드 서버 홍보는 금지됩니다.'))
   }
